@@ -21,7 +21,7 @@ export class Feedback extends Component {
     render() {
         return (
             <>
-                <h1>Hello World I am Feedback</h1>
+                <h1>Feedback Count</h1>
                 <Rate grades={this.GRADES} onHandleCounter={this.handleCounter}></Rate>
 
                 BAD: {this.state.bad}, GOOD: {this.state.good}, NEUTRAL: {this.state.neutral}
