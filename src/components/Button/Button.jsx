@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { toTitle } from "utilities/toTitle";
 
 export const Button = ({name, onHandleClick}) => (
@@ -9,3 +11,8 @@ export const Button = ({name, onHandleClick}) => (
         {toTitle(name)}
     </button>
 )
+
+Button.propTypes = {
+        name: PropTypes.string.isRequired,
+        onHandleClick: PropTypes.func.isRequired,
+}
